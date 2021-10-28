@@ -40,6 +40,16 @@ describe('Cenário de teste: Testar funcionalidades de login do site globalsqa',
 
     })
 
+    it ('Caso de teste: Remover usuário cadastrado e verificar', () => {
+
+        var userInfo = criarUsusario();
+        cy.loginNinjaQa(userInfo[0], userInfo[1]);
+        cy.get('.ng-binding > a').click();
+        cy.loginNinjaQa(userInfo[0], userInfo[1]);
+        cy.get('.ng-binding').should('have.text', 'Username or password is incorrect')
+
+    })
+
 })
 
 //Função
