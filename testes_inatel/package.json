@@ -1,0 +1,15 @@
+{
+  "name": "testes_inatel",
+  "version": "1.0.0",
+  "description": "testes aula inatel",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^8.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "ISC"
+}
